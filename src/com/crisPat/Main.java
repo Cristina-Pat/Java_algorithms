@@ -11,9 +11,12 @@ public class Main {
         int [][] newNumb = {{0, 0, 0},{0, 0, 0},{0, 0, 0}};
         //RotationMatrix90.rotateMatrix90D(numb, newNumb);
 
-        int[] pages = {1, 4, 7};
+        int[] pages = {1, 0, 5};
         int[] chapters = {0, 3};
-        System.out.println(MakeArrayConsecutive.missingElements(pages));
-        System.out.println(MakeArrayConsecutive.missingElements(chapters));
+        //System.out.println(MakeArrayConsecutive.missingElements(pages));
+        //System.out.println(MakeArrayConsecutive.missingElements(chapters));
+
+        int[] numbers = { -4, 3, -9, 0, 4, 1};
+        RatioOfElements.plusMinus(numbers);;
     }
 }
