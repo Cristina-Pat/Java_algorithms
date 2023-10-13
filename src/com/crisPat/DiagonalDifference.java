@@ -20,4 +20,21 @@ public class DiagonalDifference {
         return Math.abs(sumLtR - sumRtL) ;
 
     }
+
+    public static int solution2(List<List<Integer>> arr) {
+        int sumLtR = 0;
+        int sumRtL = 0;
+
+        for (int i = 0, j = arr.size()-1; i < arr.size(); i++){
+            sumLtR+=arr.get(i).get(i);
+
+            if(j == arr.size() - 1 - i){
+                sumRtL+=arr.get(i).get(j);
+            }
+            j--;
+
+        }
+        return Math.abs(sumLtR - sumRtL) ;
+
+    }
 }
