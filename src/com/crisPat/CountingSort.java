@@ -21,5 +21,23 @@ public class CountingSort {
         }
         return result;
     }
+
+    public static List<Integer> sol2(List<Integer> arr) {
+        int count = 0;
+        List<Integer> result = new ArrayList<>();
+
+        for (int i = 0; i < 100; i++){
+            for (int j = 0; j < arr.size(); j++){
+                if( i == arr.get(j)){
+                    count++;
+                }
+            }
+            result.add(i, count);
+            count = 0;
+        }
+        return result;
+    }
+
 }
+
 
